@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icons end -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./range.css">
+    <!-- Css end -->
+</head>
+
+<body>
+    <section class="audio-body">
+        <div class="audio">
+            <div class="music-inform">
+                <audio src="./audio/Nzakt Teymurova  Qal Sn Qurban.mp3" class="audio-play"></audio>
+                <img src="./images/nezaket.png" alt="singer" class="singer-image">
+                <div>
+                    <p class="artist-name">Artist Name</p>
+                    <marquee direction="left" class="song-name">Lorem ipsum dolor sit amet consectetur.</marquee>
+                </div>
+            </div>
+            <div>
+                <input type="range" value="0" class="time range blue"></input>
+                <div class="duration">
+                    <div class="startDuration white">0:00</div>
+                    <div class="maxDuration white">-2:50</div>
+                </div>
+            </div>
+            <div class="controller">
+                <i class="fa-solid fa-backward controller-icons backward"></i>
+                <i class="fa-solid fa-play controller-icons play "></i>
+                <i class="fa-solid fa-pause controller-icons pause active"></i>
+                <i class="fa-solid fa-forward controller-icons forward"></i>
+            </div>
+        </div>
+    </section>
+    <script src="./data.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
